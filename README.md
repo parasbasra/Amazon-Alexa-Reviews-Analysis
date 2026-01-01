@@ -1,88 +1,93 @@
-# Amazon Alexa Reviews Analysis 📈
+# Amazon Alexa Reviews Analysis 📊
 
-End-to-end analysis, sentiment classification, and business intelligence from thousands of Amazon Alexa product reviews. This project combines Python data science (NLP + machine learning) and Power BI interactive dashboarding to deliver actionable insights for product teams and executive stakeholders.
+Customer feedback analysis and business insights derived from Amazon Alexa product reviews.  
+This project focuses on understanding customer sentiment, review patterns, and product perception using Python-based analysis and an interactive Power BI dashboard.
+
+---
 
 ## 🚀 Project Overview
 
-This project analyzes real-world Amazon Alexa product reviews to uncover:
-- What drives customer satisfaction and complaints
-- How sentiment, rating, and device type interact
-- Key trends and product improvement opportunities
+This project analyzes real-world Amazon Alexa customer reviews to answer business questions such as:
+- What drives customer satisfaction and dissatisfaction?
+- How do ratings and sentiment vary across device variations?
+- What patterns in customer feedback can inform product and CX improvements?
 
-It demonstrates the full data analytics workflow: Python-based text and ML modeling, plus an executive-ready Power BI dashboard for exploration and storytelling.
+The emphasis of the project is **exploratory analysis and insight generation**, with standard sentiment analysis techniques used as a supporting tool rather than as a modeling exercise.
+
+---
 
 ## 🗂️ Data
 
-- **Source:** Amazon Alexa Reviews Dataset (from Kaggle)
-- **Fields:** date, device variation, rating, verified review, review text, computed sentiment, word count, and more
-- **Scope:** Thousands of verified purchase reviews, spanning multiple Alexa device models/variations
+- **Source:** Amazon Alexa Reviews Dataset (Kaggle)
+- **Content:** Customer reviews, ratings, device variations, review text, and derived attributes
+- **Scope:** Thousands of verified purchase reviews across multiple Alexa device models
+
+---
 
 ## 🧰 Tools & Technologies
 
-- **Python** (Pandas, scikit-learn, NLTK/VADER, XGBoost) for EDA, sentiment NLP, and model training
-- **Power BI** for dashboarding, visual analytics, and stakeholder insights
-- **Jupyter Notebook** for end-to-end data science workflow
-- **Git/GitHub** for portfolio and version control
+- **Python** (Pandas, scikit-learn, NLTK/VADER) for data cleaning, EDA, and sentiment analysis
+- **Power BI** for interactive dashboards and business storytelling
+- **Jupyter Notebook** for structured analysis workflow
+- **Git/GitHub** for version control and portfolio presentation
 
-## ⚡ Workflow & Methodology
+---
 
-### 1. Data Preprocessing & Feature Engineering
-- Cleaning and exploring raw review data
-- Creating new features: review length, word count, NLP-based sentiment
+## ⚙️ Analysis Workflow
+
+### 1. Data Preparation & Exploration
+- Cleaning and understanding raw customer review data
+- Feature creation such as review length and sentiment labels
+- Initial exploration of ratings, devices, and review characteristics
 
 ### 2. Exploratory Data Analysis (EDA)
-- Visualization of ratings, device variations, review characteristics
-- Insights into distribution and trends
+- Distribution of ratings and sentiment
+- Review length and feedback patterns
+- Comparison of customer sentiment across device variations
+- Identification of trends and anomalies in customer feedback
 
-### 3. Sentiment Analysis & Machine Learning
-- Rule-based and model-based sentiment labeling
-- Multiple classifiers compared: Logistic Regression, XGBoost, Random Forest, Multinomial Naive Bayes
-- Model evaluation: accuracy, classification reports, confusion matrices, and feature importances
+### 3. Sentiment Analysis (Supporting Analysis)
+- Application of standard, off-the-shelf sentiment techniques to categorize customer feedback
+- Sentiment used to validate patterns observed during EDA rather than to optimize predictive performance
 
-### 4. Business Intelligence Dashboarding (Power BI)
-- Interactive KPIs: total reviews, average rating, % positive, top device
-- Distribution and trend visuals: ratings, sentiment, device variation, review length
-- Drill-through detail view: read customer feedback filtered by device/sentiment
-- Filters and slicers for flexible, executive-friendly slice-and-dice
+### 4. Business Intelligence Dashboard (Power BI)
+- KPIs: total reviews, average rating, sentiment distribution
+- Interactive visuals by device variation and sentiment
+- Drill-through capability to explore individual customer comments
+- Designed for business users and stakeholders
+
+---
 
 ## 📊 Key Insights
 
-- Majority of Alexa reviews are positive (87%+), average rating ~4.5/5.
-- Device models vary in satisfaction—some variants receive more criticism.
-- Negative reviews are, on average, longer and more detailed.
-- Sentiment and star ratings strongly correlate, but some high-star reviews contain nuanced complaints.
-- Power BI dashboard enables business users to drill into real feedback for product, feature, and CX improvement.
+- Most Alexa reviews are positive, with high overall customer satisfaction.
+- Certain device variations receive comparatively more negative feedback.
+- Negative reviews tend to be longer and more detailed than positive ones.
+- Sentiment generally aligns with star ratings, but qualitative feedback provides additional nuance.
+- The Power BI dashboard enables stakeholders to explore customer feedback at both summary and detail levels.
 
-## 📝 Project Structure
+---
 
+## 🗂️ Project Structure
+
+- **/1.data/**
+  - Processed review data used for analysis and dashboarding
+- **/2.dashboard/**
+  - `alexa_review_dashboard.pbix` – Interactive Power BI report
 - **/notebooks/**
-  - `alexa_review_analysis.ipynb` – Fully-commented, end-to-end Jupyter notebook (EDA, sentiment, ML modeling)
-- **/dashboard/**
-  - `alexa_review_dashboard.pbix` – Power BI dashboard file (interactive, executive-ready)
-- **/data/**
-  - `alexa_reviews_processed.csv` – Clean/prepared data for BI and sharing
+  - `alexa_review_analysis.ipynb` – Python notebook containing data preparation, EDA, and sentiment analysis
 
-## 📈 Sample Visuals
-
-- Review count and star ratings distributions
-- Sentiment over time (line/area)
-- Stacked bar: device variation vs. sentiment
-- Confusion matrices and model comparison bar charts
-- Drill-through page: read individual customer comments
-
-## 🛠️ How to Reproduce
-
-1. Clone the repo, run the Jupyter notebook (`notebooks/alexa_review_analysis.ipynb`), and generate processed CSVs.
-2. Open the processed data in Power BI (`dashboard/alexa_review_dashboard.pbix`).
-3. Explore and filter insights interactively, or extend for new business questions.
+---
 
 ## 💡 Business Value
 
-This project empowers product managers, CX teams, and leadership to:
-- Pinpoint areas for device improvement and support intervention
-- Understand sentiment and usage trends across time and product line
-- Translate unstructured feedback into actionable insights for Amazon Alexa evolution
+This analysis demonstrates how unstructured customer feedback can be translated into actionable insights to support:
+- Product improvement discussions
+- Customer experience analysis
+- Data-driven decision-making for product and CX teams
+
+---
 
 ## 👤 Author
 
-[Paras Basra]
+Paras Basra
